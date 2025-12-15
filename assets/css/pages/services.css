@@ -1,0 +1,14 @@
+/* services.css */
+
+#repair img,
+#builds img,
+#web img {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+#repair,
+#builds,
+#web {
+  scroll-margin-top: 90px;
+}

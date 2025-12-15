@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  role="img"
+  aria-label="Cyber Solutions LLC logo">
+
+  <defs>
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4fd1ff"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle
+    cx="256"
+    cy="256"
+    r="210"
+    fill="none"
+    stroke="url(#neonGradient)"
+    stroke-width="16"
+    filter="url(#neonGlow)" />
+
+  <!-- Inner ring -->
+  <circle
+    cx="256"
+    cy="256"
+    r="160"
+    fill="none"
+    stroke="url(#neonGradient)"
+    stroke-width="8"
+    opacity="0.7" />
+
+  <!-- Core symbol -->
+  <path
+    d="M196 256c0-33 27-60 60-60 20 0 38 10 49 26"
+    fill="none"
+    stroke="url(#neonGradient)"
+    stroke-width="18"
+    stroke-linecap="round"
+    filter="url(#neonGlow)" />
+
+  <path
+    d="M316 256c0 33-27 60-60 60-20 0-38-10-49-26"
+    fill="none"
+    stroke="url(#neonGradient)"
+    stroke-width="18"
+    stroke-linecap="round"
+    filter="url(#neonGlow)" />
+
+  <!-- Center node -->
+  <circle
+    cx="256"
+    cy="256"
+    r="14"
+    fill="url(#neonGradient)"
+    filter="url(#neonGlow)" />
+
+</svg>

@@ -1,0 +1,58 @@
+/* home.css */
+
+.hero {
+  position: relative;
+  padding: var(--space-xl) 0;
+}
+
+.hero-shell {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0,229,255,0.2);
+  box-shadow: 0 18px 60px rgba(0,229,255,0.18);
+}
+
+.hero-shell canvas#fx {
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.hero-shell::after {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  background: radial-gradient(circle, rgba(0,229,255,0.18), transparent 55%);
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.hero .h1 {
+  max-width: 14ch;
+}
+
+.hero .lead {
+  max-width: 60ch;
+}
+
+.logo-hero {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-lg) 0 var(--space-md);
+}
+
+.logo-hero__wrap {
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(0,229,255,0.16), rgba(0,229,255,0.04));
+  border: 1px solid rgba(0,229,255,0.4);
+  box-shadow: 0 24px 60px rgba(0,229,255,0.2);
+  backdrop-filter: blur(12px);
+}
+
+.logo-hero__img {
+  width: min(320px, 60vw);
+  height: auto;
+  filter: drop-shadow(0 0 25px rgba(0,229,255,0.4));
+}

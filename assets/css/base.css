@@ -1,0 +1,106 @@
+/* base.css - typography + base elements + font loading */
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Optional: if you add Inter later, we can wire it here */
+
+html {
+  color-scheme: dark;
+  background: var(--bg-main);
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background:
+    linear-gradient(180deg, rgba(4,8,18,0.8), rgba(4,8,18,0.95)),
+    url("../images/hero-bg.webp") center/cover no-repeat fixed;
+  min-height: 100%;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(0, 229, 255, 0.16) 1px, transparent 1px);
+  background-size: 18px 18px;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -1;
+}
+
+::selection {
+  background: rgba(79,209,255,0.22);
+}
+
+/* Type scale */
+.h1, h1 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.5px;
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.05;
+  margin: 0 0 var(--space-md);
+}
+
+.h2, h2 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.4px;
+  font-size: clamp(22px, 3vw, 34px);
+  line-height: 1.15;
+  margin: 0 0 var(--space-sm);
+}
+
+h3 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.35px;
+  margin: 0 0 var(--space-xs);
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: rgba(230,234,255,0.90);
+  max-width: 70ch;
+  margin: 0 0 var(--space-md);
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.kicker {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: rgba(79,209,255,0.92);
+  margin-bottom: var(--space-sm);
+}
+
+/* Links */
+a:hover {
+  opacity: 0.92;
+}
+
+/* Horizontal rule */
+.hr {
+  border: 0;
+  height: 1px;
+  margin: var(--space-lg) 0;
+  background: linear-gradient(90deg, transparent, rgba(79,209,255,0.28), transparent);
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio | Cyber Solutions LLC</title>
+  <meta name="description" content="Recent repair work, custom PC builds, and web projects by Cyber Solutions LLC.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/pages/portfolio.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container" data-slot="site-header"></div>
+  </header>
+
+  <main class="container">
+
+    <section data-reveal>
+      <span class="kicker">Portfolio</span>
+      <h1 class="h1">Our Work</h1>
+      <p class="lead">
+        A snapshot of recent projects. Replace these placeholders with real jobs
+        as you complete them.
+      </p>
+    </section>
+
+    <hr class="hr">
+
+    <!-- Filter Bar -->
+    <div class="toolbar" data-reveal>
+      <button class="btn active" data-filter="all">All</button>
+      <button class="btn" data-filter="repair">Repair</button>
+      <button class="btn" data-filter="build">PC Builds</button>
+      <button class="btn" data-filter="web">Web</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid" data-portfolio data-reveal>
+
+      <article class="card work-card" data-type="repair">
+        <img src="assets/images/portfolio-2.webp" alt="Console repair project">
+        <div class="work-meta">
+          <b>Console Repair</b>
+          <div class="muted">Thermal service and deep clean</div>
+        </div>
+      </article>
+
+      <article class="card work-card" data-type="build">
+        <img src="assets/images/portfolio-3.webp" alt="Custom PC build">
+        <div class="work-meta">
+          <b>Custom Gaming PC</b>
+          <div class="muted">High-performance, clean cable management</div>
+        </div>
+      </article>
+
+      <article class="card work-card" data-type="web">
+        <img src="assets/images/portfolio-1.webp" alt="Website project">
+        <div class="work-meta">
+          <b>Business Website</b>
+          <div class="muted">Modern layout and fast load times</div>
+        </div>
+      </article>
+
+    </section>
+
+    <hr class="hr">
+
+    <section class="card callout" data-reveal>
+      <h2 class="h2">Want your project featured here?</h2>
+      <p class="lead">
+        Get in touch and let’s build something worth showing off.
+      </p>
+      <div class="toolbar">
+        <a class="btn btn-primary" href="contact.html">Start a Project</a>
+        <a class="btn" href="services.html">View Services</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container" data-slot="site-footer"></div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/portfolio-filter.js"></script>
+  <script src="assets/js/scroll-animations.js"></script>
+  <script src="assets/js/performance.js"></script>
+
+</body>
+</html>

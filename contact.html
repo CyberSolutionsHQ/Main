@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | Cyber Solutions LLC</title>
+  <meta name="description" content="Contact Cyber Solutions LLC for device repair, custom builds, or web services. Get a fast quote.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/pages/contact.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container" data-slot="site-header"></div>
+  </header>
+
+  <main class="container">
+
+    <section data-reveal>
+      <span class="kicker">Contact</span>
+      <h1 class="h1">Get a quote</h1>
+      <p class="lead">
+        Tell us what you need. The more detail you provide, the faster we can lock in pricing and timeline.
+      </p>
+    </section>
+
+    <hr class="hr">
+
+    <section class="grid-2" data-reveal>
+
+      <!-- Contact Form -->
+      <form class="card form" data-contact-form>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="type">Request Type</label>
+          <select id="type" name="type">
+            <option>Repair</option>
+            <option>Custom PC Build</option>
+            <option>Website</option>
+            <option>Scheduling / Management App</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Details</label>
+          <textarea id="message" name="message" rows="6"
+            placeholder="Device model, symptoms, budget, timeline, links, screenshots, etc."
+            required></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Send Message</button>
+
+        <div id="formStatus" class="muted">
+          Tip: Add a Formspree endpoint in assets/js/main.js to enable real sending.
+        </div>
+      </form>
+
+      <!-- Quick Contact Info -->
+      <div class="stack">
+        <div class="card callout">
+          <h2 class="h2">Fast contact</h2>
+          <p class="muted" style="line-height:1.8;">
+            Phone/text and email are fastest for repairs. For web/app work, include examples you like and target timelines.
+          </p>
+
+          <div class="toolbar" style="margin-top:14px;">
+            <a class="btn" href="tel:+12287315948">Call/Text</a>
+            <a class="btn" href="mailto:Thomas.cook@cybersolutionshq.com">Email</a>
+            <a class="btn" href="https://www.facebook.com/share/1HwvWnsxHX/" target="_blank" rel="noreferrer">Facebook</a>
+          </div>
+        </div>
+
+        <div class="card callout">
+          <h2 class="h2">Service area</h2>
+          <p class="muted" style="line-height:1.8;">
+            Biloxi / Gulfport and surrounding Mississippi Gulf Coast. Remote web/app work available.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container" data-slot="site-footer"></div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/scroll-animations.js"></script>
+  <script src="assets/js/performance.js"></script>
+  <script src="assets/js/form-handler.js"></script>
+
+</body>
+</html>

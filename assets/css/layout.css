@@ -1,0 +1,76 @@
+/* layout.css - containers, grids, header/footer layout */
+
+.container {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(14px);
+  background: linear-gradient(180deg, rgba(7, 10, 18, 0.75), rgba(7, 10, 18, 0.55));
+  border-bottom: 1px solid rgba(0,229,255,0.20);
+  box-shadow: 0 12px 40px rgba(0,229,255,0.14);
+}
+
+.site-footer {
+  margin-top: var(--space-xl);
+  border-top: 1px solid var(--border-soft);
+  background: linear-gradient(180deg, rgba(7, 10, 18, 0.78), rgba(7, 10, 18, 0.6));
+  box-shadow: 0 -10px 30px rgba(0,229,255,0.12);
+}
+
+.site-footer .container {
+  padding: 22px 0;
+}
+
+/* Layout helpers */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Stacking sections */
+section {
+  padding: 18px 0;
+}
+
+/* Cards wrapper */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+@media (max-width: 980px) {
+  .cards { grid-template-columns: 1fr; }
+}
+
+/* Generic stack for sidebar blocks */
+.stack {
+  display: grid;
+  gap: var(--space-md);
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Main spacing */
+main.container {
+  padding: var(--space-lg) 0 var(--space-xl);
+}

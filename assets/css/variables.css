@@ -1,0 +1,42 @@
+/* variables.css - design tokens */
+
+:root {
+  --bg-main: #070a12;
+  --panel: rgba(12, 16, 28, 0.78);
+  --panel-strong: rgba(15, 21, 34, 0.9);
+  --text-main: #e6ecff;
+  --text-muted: #9db0c5;
+  --accent-blue: #00e5ff;
+  --accent-purple: #a58bff;
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(0, 229, 255, 0.45);
+  --shadow-soft: 0 14px 50px rgba(0, 0, 0, 0.4);
+
+  --font-body: "Orbitron", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-heading: "Orbitron", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --space-xs: 6px;
+  --space-sm: 10px;
+  --space-md: 18px;
+  --space-lg: 30px;
+  --space-xl: 48px;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+
+  --speed-fast: 120ms;
+  --speed-normal: 220ms;
+  --ease-main: cubic-bezier(0.4, 0.2, 0.1, 1);
+}
+
+[data-theme="light"] {
+  --bg-main: #f6f8ff;
+  --panel: rgba(255, 255, 255, 0.88);
+  --panel-strong: rgba(255, 255, 255, 0.96);
+  --text-main: #0c1124;
+  --text-muted: #415065;
+  --border-soft: rgba(0, 0, 0, 0.08);
+  --border-glow: rgba(0, 229, 255, 0.35);
+  --shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.14);
+}

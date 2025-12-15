@@ -1,0 +1,10 @@
+/* contact.css */
+
+.form button {
+  margin-top: var(--space-sm);
+}
+
+#formStatus {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
