@@ -9,7 +9,7 @@ function handleContactForm() {
 
   status.textContent = CONTACT_ENDPOINT
     ? "Ready to send."
-    : "Tip: add a Formspree endpoint in assets/js/form-handler.js to enable sending.";
+    : "Tip: Add a Formspree endpoint above to enable live sending.";
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
